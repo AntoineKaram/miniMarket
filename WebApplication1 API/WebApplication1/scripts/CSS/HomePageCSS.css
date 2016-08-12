@@ -1,0 +1,55 @@
+﻿
+@import url('HomePageCSS.css');
+.container-fluid img {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+.container {
+    padding-top:15px;
+}
+
+/*#HotDeals{
+    width:1000px;
+}*/
+
+ /*.Section h3 {
+     text-align:center;
+     color:red;
+     font-weight:bold;
+     font-style:italic;
+     background-color:rgba(250, 252, 8,0.8);
+ }*/
+
+ /*.HotDeals{
+     border:2pt solid rgba(250, 252, 8,0.8);
+     height:auto;
+ }*/
+ .list-group {
+     margin:0px;
+     padding:0px;
+ }
+ form  {
+     width:200px;
+     padding-left:15px;
+ }
+ form SendMessage {
+     background-color:rgb(51,122,183);
+ }
+
+ .News{
+list-style-type: none;
+ }
+ .News li {
+border-top:1px solid rgb(51,122,183);
+ }
+.News li:first-child {
+    border-style: none;
+}
+ .container .panel {
+     padding:2px;
+ }
+
+

@@ -1,0 +1,47 @@
+﻿
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-6">
+            <div class="thumbnail">
+                <img ng-src="{{mainImageSource}}">
+                <div class="caption">
+                    <h3>{{products[0].DescriptionTitle}}</h3>
+                    <p>{{products[0].Price}}</p>
+                    <p>
+                        <img ng-src="{{image.ImagesUrl}}" role="button" ng-click="ChangeMainImage(image.ImagesUrl)" 
+                              ng-repeat="image in products[0].Images" class="SmallThumb">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+
+                    <p>{{products[0].DetailTitle}}</p>
+
+                </div>
+                <div class="panel-body">
+                
+                    <p>
+                        {{products[0].DetailText}}
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-success center-block" role="button" style="font-weight:bold;">Add to Cart</a>
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-primary" role="button" style="width:49%;">Add to Wishlist</a>
+                        <a href="#" class="btn btn-primary" role="button" style="width:49%;">Send as Gift</a>
+                    </p>
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="col-md-1">
+        </div>
+    </div>

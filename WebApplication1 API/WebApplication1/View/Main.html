@@ -1,0 +1,61 @@
+﻿<html>
+
+<head>
+    
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+    <link href="../scripts/CSS/tester.css" rel="stylesheet" />
+    <link href="../scripts/CSS/CatalogueCSS.css" rel="stylesheet" />
+    <link href="../scripts/CSS/ContactUsCSS.css" rel="stylesheet" />
+    <link href="../scripts/CSS/HomePageCSS.css" rel="stylesheet" />
+    <link href="../scripts/CSS/ProductDetailsCSS.css" rel="stylesheet" />
+    <link href="../scripts/CSS/FooterCSS.css" rel="stylesheet" />
+    <link href="../scripts/CSS/MenuCSS.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <div ng-app="OnlineShopApp">
+        <div ng-controller="MenuController" ng-include="'TopMenu.html'"></div>
+        <div ng-view></div>
+
+        <!--<script type="text/ng-template" id="HomePage.htm">
+            <div ng-include="'HomePage.html'"></div>
+        </script>-->
+
+        <script type="text/ng-template" id="Catalogue.htm">
+            <div ng-include="'Catalogue.html'"></div>
+        </script>
+
+        <script type="text/ng-template" id="ContactUs.htm">
+            <div ng-include="'ContactUs.html'"></div>
+        </script>
+
+        <script type="text/ng-template" id="ProductDetails.htm">
+            <div ng-include="'ProductDetails.html'"></div>
+        </script>
+
+        <footer ng-controller="FooterController" ng-include="'Footer.html'"></footer>
+        
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--<script src="../scripts/angular.min.js"></script>
+    <script src="../scripts/CatalogueScript.js"></script>
+    <script src="../scripts/ContactUsScript.js"></script>
+    <script src="../scripts/HomePageScript.js"></script>
+    <script src="../scripts/ProductDetailsScript.js"></script>
+    <script src="../scripts/MenuScript.js"></script>-->
+
+    <script src="../scripts/MainScript.js"></script>
+</body>
+</html>

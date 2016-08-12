@@ -1,0 +1,21 @@
+Home PAge:
+ li instead of div/news						DONE 
+slideshow arrows					  	DONE 
+
+catalogue: 							DONE
+
+product details ngmodel in main image				NO SOLUTION 
+
+
+
+contact us feedback , clear form after submit                   DONE
+
+	
+start url with /api with no localport number 			DONE
+
+
+Add images alternatives to db  					Done
+check accepting null values					Ongoing	
+split homepnael tables to two diff tables (procedures*)		Ongoing
+
+ContactUs form and mini form !! (1- two diff tables 2- non all fields are required 3- set default value within the mini form )

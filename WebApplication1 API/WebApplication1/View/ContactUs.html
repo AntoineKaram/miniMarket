@@ -1,0 +1,64 @@
+﻿
+    <div class="container" >
+        <form method="post">
+            <div class="container">
+                <h2> Our Address </h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4919.908206550789!2d35.50881190521419!3d33.871702411147446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slb!4v1468402953787" height="300" frameborder="0" style="border:0;width:100%;" allowfullscreen></iframe>
+            </div>
+            <div class="container" style="padding-top:10px; padding-left:20px; padding-right:20px;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="FirstName">FirstName</label>
+                        <input type="text" class="form-control" placeholder="First Name"
+                               ng-model="contactUsData.FirstName" aria-describedby="basic-addon1"
+                               ng-click="notification()" id="FirstName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last Name"
+                               ng-model="contactUsData.LastName" aria-describedby="basic-addon1"
+                               ng-click="notification()" id="LastName">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" placeholder="Email" id="Email"
+                               ng-click="notification()" ng-model="contactUsData.Email">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="MessageType">Message Type </label>
+                        <select id="MessageType" class="form-control" ng-model="contactUsData.MessageType" ng-click="notification()">
+                            <option value="Questions">Questions</option>
+                            <option value="Complaints">Complaints</option>
+                        </select>
+                    </div>
+                <!--</div>-->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="MessageText">Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Your Message"
+                                  ng-model="contactUsData.MessageText" aria-describedby="basic-addon2"
+                                  id="MessageText" ng-click="notification()"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                    </div>
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <label style="color:green;" ng-show="result=='true'"> Message Sent !</label>
+
+                            <input type="submit" class="btn btn-primary btn-send center-block SendMessage"
+                                   ng-click="sendContactDetails()" value="Send message" />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
